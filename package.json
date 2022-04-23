@@ -59,7 +59,7 @@
   },
   "lint-staged": {
     "*.{js,json,md,ts,tsx}": [
-      "yarn format --uncommited"
+      "yarn nx affected:lint  -- --uncommited"
     ]
   }
 }
