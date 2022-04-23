@@ -1,7 +1,7 @@
 {
   "npmScope": "multi-epargne",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "cli": {
     "defaultCollection": "@nrwl/react"
