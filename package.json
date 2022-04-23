@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "postinstall": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -52,14 +53,9 @@
     "ts-jest": "27.0.5",
     "typescript": "~4.6.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,json,md,ts,tsx}": [
-      "yarn nx affected:lint  -- --uncommited"
+      "yarn nx affected:lint --uncommitted"
     ]
   }
 }
