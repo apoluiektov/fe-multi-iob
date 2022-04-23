@@ -1,0 +1,25 @@
+{
+  "root": "libs/front-office/data-access/core",
+  "sourceRoot": "libs/front-office/data-access/core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/front-office/data-access/core/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/front-office/data-access/core"],
+      "options": {
+        "jestConfig": "libs/front-office/data-access/core/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

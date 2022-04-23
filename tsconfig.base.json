@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@multi-epargne/back-office/data-access/core": [
+        "libs/back-office/data-access/core/src/index.ts"
+      ],
+      "@multi-epargne/back-office/features/main": [
+        "libs/back-office/features/main/src/index.ts"
+      ],
+      "@multi-epargne/front-office/data-access/core": [
+        "libs/front-office/data-access/core/src/index.ts"
+      ],
+      "@multi-epargne/front-office/features/main": [
+        "libs/front-office/features/main/src/index.ts"
+      ],
+      "@multi-epargne/packages-ui-kit": ["libs/packages/ui/kit/src/index.ts"],
+      "@multi-epargne/packages-utils-testing": [
+        "libs/packages/utils/testing/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

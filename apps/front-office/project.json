@@ -1,0 +1,73 @@
+{
+  "root": "apps/front-office",
+  "sourceRoot": "apps/front-office/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/front-office",
+        "index": "apps/front-office/src/index.html",
+        "baseHref": "/",
+        "main": "apps/front-office/src/main.tsx",
+        "polyfills": "apps/front-office/src/polyfills.ts",
+        "tsConfig": "apps/front-office/tsconfig.app.json",
+        "assets": [
+          "apps/front-office/src/favicon.ico",
+          "apps/front-office/src/assets"
+        ],
+        "styles": ["apps/front-office/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/front-office/src/environments/environment.ts",
+              "with": "apps/front-office/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "front-office:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "front-office:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/front-office/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/front-office"],
+      "options": {
+        "jestConfig": "apps/front-office/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

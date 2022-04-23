@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "projects": {
+    "back-office": "apps/back-office",
+    "back-office-data-access-core": "libs/back-office/data-access/core",
+    "back-office-e2e": "apps/back-office-e2e",
+    "back-office-features-main": "libs/back-office/features/main",
+    "front-office": "apps/front-office",
+    "front-office-data-access-core": "libs/front-office/data-access/core",
+    "front-office-e2e": "apps/front-office-e2e",
+    "front-office-features-main": "libs/front-office/features/main",
+    "packages-ui-kit": "libs/packages/ui/kit",
+    "packages-utils-testing": "libs/packages/utils/testing"
+  }
+}

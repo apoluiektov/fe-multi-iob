@@ -1,0 +1,25 @@
+{
+  "root": "libs/back-office/data-access/core",
+  "sourceRoot": "libs/back-office/data-access/core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/back-office/data-access/core/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/back-office/data-access/core"],
+      "options": {
+        "jestConfig": "libs/back-office/data-access/core/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

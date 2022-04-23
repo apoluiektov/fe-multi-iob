@@ -1,0 +1,43 @@
+{
+  "root": "libs/packages/utils/testing",
+  "sourceRoot": "libs/packages/utils/testing/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/packages/utils/testing",
+        "tsConfig": "libs/packages/utils/testing/tsconfig.lib.json",
+        "project": "libs/packages/utils/testing/package.json",
+        "entryFile": "libs/packages/utils/testing/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/packages/utils/testing/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/packages/utils/testing/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/packages/utils/testing"],
+      "options": {
+        "jestConfig": "libs/packages/utils/testing/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
