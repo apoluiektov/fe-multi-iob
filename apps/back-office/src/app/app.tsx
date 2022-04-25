@@ -2,12 +2,20 @@
 import styles from './app.module.scss';
 
 import { Route, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 import { BackOfficeFeaturesMain } from '@multi-epargne/back-office/features/main';
+import { getTestState } from '@multi-epargne/back-office/data-access/core';
 
 export function App() {
+  // store test
+  const testSlice = useSelector(getTestState)
+  
+
   return (
     <>
       <BackOfficeFeaturesMain />
+      <b>{testSlice.test}</b>
       <div />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
