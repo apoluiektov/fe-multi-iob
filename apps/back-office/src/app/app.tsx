@@ -2,14 +2,13 @@
 import styles from './app.module.scss';
 
 import { Route, Link } from 'react-router-dom';
+
 import { BackOfficeFeaturesMain } from '@multi-epargne/back-office/features/main';
-import { BackOfficeDataAccessCore } from '@multi-epargne/back-office/data-access/core';
 
 export function App() {
   return (
     <>
       <BackOfficeFeaturesMain />
-      <BackOfficeDataAccessCore />
       <div />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
