@@ -20,6 +20,7 @@ export async function generateTypedLibrary(
     skipFormat: true,
     skipTsConfig: false,
     style: 'scss',
+    publishable: scope === 'packages',
     tags: `scope:${scope}, type:${schema.type}`,
   };
 
