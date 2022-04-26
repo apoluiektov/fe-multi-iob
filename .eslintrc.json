@@ -13,8 +13,62 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:packages",
+                "onlyDependOnLibsWithTags": ["scope:packages"]
+              },
+              {
+                "sourceTag": "scope:back-office",
+                "onlyDependOnLibsWithTags": [
+                  "scope:packages",
+                  "scope:back-office"
+                ]
+              },
+              {
+                "sourceTag": "scope:front-office",
+                "onlyDependOnLibsWithTags": [
+                  "scope:packages",
+                  "scope:front-office"
+                ]
+              },
+              {
+                "sourceTag": "type:e2e",
+                "onlyDependOnLibsWithTags": [
+                  "type:app",
+                  "type:data-access",
+                  "type:features",
+                  "type:ui",
+                  "type:utils"
+                ]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": [
+                  "type:data-access",
+                  "type:features",
+                  "type:ui",
+                  "type:utils"
+                ]
+              },
+              {
+                "sourceTag": "type:features",
+                "onlyDependOnLibsWithTags": [
+                  "type:data-access",
+                  "type:features",
+                  "type:ui",
+                  "type:utils"
+                ]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:utils"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:utils"]
+              },
+              {
+                "sourceTag": "type:utils",
+                "onlyDependOnLibsWithTags": ["type:utils"]
               }
             ]
           }
