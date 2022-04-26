@@ -7,7 +7,7 @@ export enum LibraryType {
   FEATURES = 'features',
   DATA_ACCESS = 'data-access',
   UI = 'ui',
-  utils = 'utils',
+  UTILS = 'utils',
 }
 
 export interface LibraryTypedSchema extends LibrarySchema {
