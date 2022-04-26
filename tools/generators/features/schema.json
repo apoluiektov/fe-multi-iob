@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "$id": "feature-generator",
+  "$id": "features",
   "type": "object",
   "properties": {
     "scope": {
