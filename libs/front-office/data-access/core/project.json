@@ -2,7 +2,7 @@
   "root": "libs/front-office/data-access/core",
   "sourceRoot": "libs/front-office/data-access/core/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:front-office", "type:data-access"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

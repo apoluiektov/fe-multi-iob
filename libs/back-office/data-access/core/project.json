@@ -2,7 +2,7 @@
   "root": "libs/back-office/data-access/core",
   "sourceRoot": "libs/back-office/data-access/core/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:back-office", "type:data-access"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

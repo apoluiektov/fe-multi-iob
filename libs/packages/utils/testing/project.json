@@ -2,7 +2,7 @@
   "root": "libs/packages/utils/testing",
   "sourceRoot": "libs/packages/utils/testing/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:packages", "type:utils"],
   "targets": {
     "build": {
       "executor": "@nrwl/web:rollup",

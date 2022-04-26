@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:back-office", "type:e2e"],
   "implicitDependencies": ["back-office"]
 }

@@ -2,7 +2,7 @@
   "root": "libs/front-office/features/main",
   "sourceRoot": "libs/front-office/features/main/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:front-office", "type:features"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

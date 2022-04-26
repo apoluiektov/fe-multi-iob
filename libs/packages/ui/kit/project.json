@@ -2,7 +2,7 @@
   "root": "libs/packages/ui/kit",
   "sourceRoot": "libs/packages/ui/kit/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:packages", "type:ui"],
   "targets": {
     "build": {
       "executor": "@nrwl/web:rollup",
