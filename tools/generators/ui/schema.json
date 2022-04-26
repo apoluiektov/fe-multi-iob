@@ -4,6 +4,11 @@
   "$id": "ui",
   "type": "object",
   "properties": {
+    "scope": {
+      "type": "string",
+      "description": "Scope name",
+      "default": "packages"
+    },
     "name": {
       "type": "string",
       "description": "Library name",
